@@ -1,0 +1,172 @@
+|--- FunctionalAssessment <= 4.97
+|   |--- MMSE <= 24.02
+|   |   |--- ADL <= 5.12
+|   |   |   |--- PatientID <= 6734.00
+|   |   |   |   |--- ADL <= 5.06
+|   |   |   |   |   |--- CholesterolHDL <= 22.62
+|   |   |   |   |   |   |--- BMI <= 23.10
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- BMI >  23.10
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- CholesterolHDL >  22.62
+|   |   |   |   |   |   |--- ADL <= 4.22
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- ADL >  4.22
+|   |   |   |   |   |   |   |--- ADL <= 4.24
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- ADL >  4.24
+|   |   |   |   |   |   |   |   |--- EducationLevel <= 2.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- EducationLevel >  2.50
+|   |   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 4.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- FunctionalAssessment >  4.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- ADL >  5.06
+|   |   |   |   |   |--- DietQuality <= 6.58
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- DietQuality >  6.58
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- PatientID >  6734.00
+|   |   |   |   |--- DiastolicBP <= 89.00
+|   |   |   |   |   |--- CholesterolTotal <= 277.90
+|   |   |   |   |   |   |--- AlcoholConsumption <= 4.67
+|   |   |   |   |   |   |   |--- EducationLevel <= 2.50
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- EducationLevel >  2.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- AlcoholConsumption >  4.67
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- CholesterolTotal >  277.90
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- DiastolicBP >  89.00
+|   |   |   |   |   |--- Age <= 88.00
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Age >  88.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |--- ADL >  5.12
+|   |   |   |--- MemoryComplaints <= 0.50
+|   |   |   |   |--- BehavioralProblems <= 0.50
+|   |   |   |   |   |--- PatientID <= 6737.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- PatientID >  6737.00
+|   |   |   |   |   |   |--- CholesterolTotal <= 243.56
+|   |   |   |   |   |   |   |--- SystolicBP <= 170.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- SystolicBP >  170.50
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- CholesterolTotal >  243.56
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- BehavioralProblems >  0.50
+|   |   |   |   |   |--- PatientID <= 6837.50
+|   |   |   |   |   |   |--- MMSE <= 22.33
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- MMSE >  22.33
+|   |   |   |   |   |   |   |--- SleepQuality <= 6.40
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- SleepQuality >  6.40
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- PatientID >  6837.50
+|   |   |   |   |   |   |--- DietQuality <= 7.36
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- DietQuality >  7.36
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- MemoryComplaints >  0.50
+|   |   |   |   |--- SleepQuality <= 9.31
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- SleepQuality >  9.31
+|   |   |   |   |   |--- BMI <= 30.89
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- BMI >  30.89
+|   |   |   |   |   |   |--- class: 1
+|   |--- MMSE >  24.02
+|   |   |--- PatientID <= 6727.50
+|   |   |   |--- CholesterolTriglycerides <= 351.71
+|   |   |   |   |--- class: 0
+|   |   |   |--- CholesterolTriglycerides >  351.71
+|   |   |   |   |--- MMSE <= 29.37
+|   |   |   |   |   |--- SleepQuality <= 5.32
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- SleepQuality >  5.32
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- MMSE >  29.37
+|   |   |   |   |   |--- class: 1
+|   |   |--- PatientID >  6727.50
+|   |   |   |--- CholesterolTotal <= 216.46
+|   |   |   |   |--- class: 1
+|   |   |   |--- CholesterolTotal >  216.46
+|   |   |   |   |--- class: 0
+|--- FunctionalAssessment >  4.97
+|   |--- MemoryComplaints <= 0.50
+|   |   |--- PatientID <= 6750.50
+|   |   |   |--- BehavioralProblems <= 0.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- BehavioralProblems >  0.50
+|   |   |   |   |--- ADL <= 5.05
+|   |   |   |   |   |--- MMSE <= 23.99
+|   |   |   |   |   |   |--- CholesterolTotal <= 164.62
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- CholesterolTotal >  164.62
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- MMSE >  23.99
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- ADL >  5.05
+|   |   |   |   |   |--- class: 0
+|   |   |--- PatientID >  6750.50
+|   |   |   |--- FunctionalAssessment <= 7.77
+|   |   |   |   |--- SleepQuality <= 9.55
+|   |   |   |   |   |--- CholesterolTotal <= 161.61
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- CholesterolTotal >  161.61
+|   |   |   |   |   |   |--- Disorientation <= 0.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Disorientation >  0.50
+|   |   |   |   |   |   |   |--- EducationLevel <= 2.00
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- EducationLevel >  2.00
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- SleepQuality >  9.55
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- FunctionalAssessment >  7.77
+|   |   |   |   |--- AlcoholConsumption <= 2.69
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- AlcoholConsumption >  2.69
+|   |   |   |   |   |--- CholesterolTriglycerides <= 58.69
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- CholesterolTriglycerides >  58.69
+|   |   |   |   |   |   |--- BehavioralProblems <= 0.50
+|   |   |   |   |   |   |   |--- MMSE <= 28.21
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- MMSE >  28.21
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- BehavioralProblems >  0.50
+|   |   |   |   |   |   |   |--- ADL <= 4.63
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- ADL >  4.63
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |--- MemoryComplaints >  0.50
+|   |   |--- MMSE <= 23.15
+|   |   |   |--- ADL <= 4.99
+|   |   |   |   |--- PatientID <= 6737.50
+|   |   |   |   |   |--- SystolicBP <= 91.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- SystolicBP >  91.00
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- PatientID >  6737.50
+|   |   |   |   |   |--- DietQuality <= 3.08
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- DietQuality >  3.08
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |--- ADL >  4.99
+|   |   |   |   |--- BehavioralProblems <= 0.50
+|   |   |   |   |   |--- PatientID <= 6658.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- PatientID >  6658.00
+|   |   |   |   |   |   |--- BMI <= 25.14
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- BMI >  25.14
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- BehavioralProblems >  0.50
+|   |   |   |   |   |--- class: 1
+|   |   |--- MMSE >  23.15
+|   |   |   |--- class: 0

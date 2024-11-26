@@ -1,0 +1,22 @@
+|--- FunctionalAssessment <= 4.97
+|   |--- MMSE <= 24.02
+|   |   |--- ADL <= 5.12
+|   |   |   |--- value: [2.65]
+|   |   |--- ADL >  5.12
+|   |   |   |--- value: [-0.01]
+|   |--- MMSE >  24.02
+|   |   |--- PatientID <= 6727.50
+|   |   |   |--- value: [-1.48]
+|   |   |--- PatientID >  6727.50
+|   |   |   |--- value: [1.19]
+|--- FunctionalAssessment >  4.97
+|   |--- MemoryComplaints <= 0.50
+|   |   |--- PatientID <= 6750.50
+|   |   |   |--- value: [-1.32]
+|   |   |--- PatientID >  6750.50
+|   |   |   |--- value: [0.79]
+|   |--- MemoryComplaints >  0.50
+|   |   |--- MMSE <= 23.15
+|   |   |   |--- value: [1.19]
+|   |   |--- MMSE >  23.15
+|   |   |   |--- value: [-1.55]

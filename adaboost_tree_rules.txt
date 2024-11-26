@@ -1,0 +1,4 @@
+|--- FunctionalAssessment <= 4.97
+|   |--- class: 1
+|--- FunctionalAssessment >  4.97
+|   |--- class: 0
