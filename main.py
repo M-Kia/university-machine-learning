@@ -35,10 +35,10 @@ def main():
 
   # Separate features and targets
   X = data.drop(columns=['Diagnosis'])
-  Y = data['Diagnosis']
+  y = data['Diagnosis']
 
   label_encoder = LabelEncoder()
-  y_encoded = label_encoder.fit_transform()
+  y_encoded = label_encoder.fit_transform(y)
   
   # Stratified train-test split
   X_train, X_test, y_train, y_test = train_test_split(X, y_encoded, test_size=0.3, stratify=y_encoded, random_state=42)
