@@ -5,9 +5,8 @@ import json
 import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeClassifier, export_text, plot_tree
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, GradientBoostingClassifier, ExtraTreesClassifier
-from xgboost import XGBClassifier
 import xgboost as xgb
-# from lightgbm
+import lightgbm as lgb
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report, recall_score, precision_score, f1_score
@@ -51,6 +50,7 @@ def main():
     "AdaBoost": AdaBoostClassifier(algorithm='SAMME'),
     "XGBoost": xgb.XGBClassifier(eval_metric='logloss'),
     "RandomForest": RandomForestClassifier(n_estimators=100, random_state=42),
+    "LightGBM":lgb.LGBMClassifier(max_depth=6, min_gain_to_split=0.1),
     "ExtraTrees": ExtraTreesClassifier(),
     "GradientBoosting": GradientBoostingClassifier()
   }
@@ -124,6 +124,14 @@ def main():
   plt.figure(figsize=(20, 10))
   xgb.plot_tree(models["XGBoost"], num_trees=0)
   plt.savefig("xgboost_tree_visualization.svg", format="svg")
+  # plt.show()
+
+
+  # Display and save the chart for the LightGBM model
+  # LightGBM is similar to XGBoost; use the same tool for tree visualization
+  plt.figure(figsize=(20, 10))
+  lgb.plot_tree(models["LightGBM"], tree_index=0)
+  plt.savefig("lgbm_tree_visualization.svg", format="svg")
   # plt.show()
 
   # Display and save the chart for the Gradient Boosting model

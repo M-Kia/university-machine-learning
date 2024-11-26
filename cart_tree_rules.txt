@@ -4,9 +4,9 @@
 |   |   |   |--- PatientID <= 6734.00
 |   |   |   |   |--- ADL <= 5.06
 |   |   |   |   |   |--- CholesterolHDL <= 22.62
-|   |   |   |   |   |   |--- CholesterolHDL <= 22.15
+|   |   |   |   |   |   |--- Ethnicity <= 0.50
 |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- CholesterolHDL >  22.15
+|   |   |   |   |   |   |--- Ethnicity >  0.50
 |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |--- CholesterolHDL >  22.62
 |   |   |   |   |   |   |--- ADL <= 4.22
@@ -18,14 +18,14 @@
 |   |   |   |   |   |   |   |   |--- EducationLevel <= 2.50
 |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |--- EducationLevel >  2.50
-|   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 76.59
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  76.59
+|   |   |   |   |   |   |   |   |   |--- PatientID <= 5902.50
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- PatientID >  5902.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |--- ADL >  5.06
-|   |   |   |   |   |--- SystolicBP <= 147.50
+|   |   |   |   |   |--- Gender <= 0.50
 |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |--- SystolicBP >  147.50
+|   |   |   |   |   |--- Gender >  0.50
 |   |   |   |   |   |   |--- class: 0
 |   |   |   |--- PatientID >  6734.00
 |   |   |   |   |--- DiastolicBP <= 89.00
@@ -33,10 +33,10 @@
 |   |   |   |   |   |   |--- PersonalityChanges <= 0.50
 |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |--- PersonalityChanges >  0.50
-|   |   |   |   |   |   |   |--- AlcoholConsumption <= 6.82
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- AlcoholConsumption >  6.82
+|   |   |   |   |   |   |   |--- Ethnicity <= 0.50
 |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Ethnicity >  0.50
+|   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |--- CholesterolTotal >  277.90
 |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |--- DiastolicBP >  89.00
@@ -51,9 +51,9 @@
 |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |--- PatientID >  6737.00
 |   |   |   |   |   |   |--- CholesterolTotal <= 243.56
-|   |   |   |   |   |   |   |--- CholesterolHDL <= 92.08
+|   |   |   |   |   |   |   |--- SystolicBP <= 170.50
 |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- CholesterolHDL >  92.08
+|   |   |   |   |   |   |   |--- SystolicBP >  170.50
 |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |--- CholesterolTotal >  243.56
 |   |   |   |   |   |   |   |--- class: 1
@@ -62,15 +62,15 @@
 |   |   |   |   |   |   |--- MMSE <= 22.33
 |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |--- MMSE >  22.33
-|   |   |   |   |   |   |   |--- Forgetfulness <= 0.50
+|   |   |   |   |   |   |   |--- DietQuality <= 5.49
 |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- Forgetfulness >  0.50
+|   |   |   |   |   |   |   |--- DietQuality >  5.49
 |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |--- PatientID >  6837.50
-|   |   |   |   |   |   |--- PatientID <= 6865.50
-|   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |--- PatientID >  6865.50
+|   |   |   |   |   |   |--- AlcoholConsumption <= 10.28
 |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- AlcoholConsumption >  10.28
+|   |   |   |   |   |   |   |--- class: 0
 |   |   |   |--- MemoryComplaints >  0.50
 |   |   |   |   |--- SleepQuality <= 9.31
 |   |   |   |   |   |--- class: 1
@@ -115,16 +115,16 @@
 |   |   |--- PatientID >  6750.50
 |   |   |   |--- FunctionalAssessment <= 7.77
 |   |   |   |   |--- SleepQuality <= 9.55
-|   |   |   |   |   |--- AlcoholConsumption <= 19.74
+|   |   |   |   |   |--- CholesterolTotal <= 161.61
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- CholesterolTotal >  161.61
 |   |   |   |   |   |   |--- Disorientation <= 0.50
 |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |--- Disorientation >  0.50
-|   |   |   |   |   |   |   |--- PhysicalActivity <= 0.23
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- PhysicalActivity >  0.23
+|   |   |   |   |   |   |   |--- FunctionalAssessment <= 5.31
 |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |--- AlcoholConsumption >  19.74
-|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- FunctionalAssessment >  5.31
+|   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |--- SleepQuality >  9.55
 |   |   |   |   |   |--- class: 0
 |   |   |   |--- FunctionalAssessment >  7.77
@@ -140,10 +140,10 @@
 |   |   |   |   |   |   |   |--- MMSE >  28.21
 |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |--- BehavioralProblems >  0.50
-|   |   |   |   |   |   |   |--- ADL <= 4.63
-|   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- ADL >  4.63
+|   |   |   |   |   |   |   |--- SystolicBP <= 152.50
 |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- SystolicBP >  152.50
+|   |   |   |   |   |   |   |   |--- class: 0
 |   |--- MemoryComplaints >  0.50
 |   |   |--- MMSE <= 23.15
 |   |   |   |--- ADL <= 4.99
@@ -153,9 +153,9 @@
 |   |   |   |   |   |--- SystolicBP >  91.00
 |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |--- PatientID >  6737.50
-|   |   |   |   |   |--- PhysicalActivity <= 3.30
+|   |   |   |   |   |--- DietQuality <= 3.08
 |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |--- PhysicalActivity >  3.30
+|   |   |   |   |   |--- DietQuality >  3.08
 |   |   |   |   |   |   |--- class: 1
 |   |   |   |--- ADL >  4.99
 |   |   |   |   |--- BehavioralProblems <= 0.50
