@@ -1,964 +1,736 @@
-|--- Ethnicity <= 0.61
-|   |--- Age <= 63.35
-|   |   |--- BehavioralProblems <= 0.61
-|   |   |   |--- PatientID <= 6594.06
-|   |   |   |   |--- EducationLevel <= 0.54
-|   |   |   |   |   |--- DiastolicBP <= 77.58
-|   |   |   |   |   |   |--- Disorientation <= 0.84
-|   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- Disorientation >  0.84
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |--- DiastolicBP >  77.58
-|   |   |   |   |   |   |--- PhysicalActivity <= 3.87
-|   |   |   |   |   |   |   |--- Age <= 61.06
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- Age >  61.06
+|--- CholesterolTriglycerides <= 58.18
+|   |--- ADL <= 7.02
+|   |   |--- PhysicalActivity <= 0.41
+|   |   |   |--- class: 1.0
+|   |   |--- PhysicalActivity >  0.41
+|   |   |   |--- AlcoholConsumption <= 19.67
+|   |   |   |   |--- BehavioralProblems <= 0.36
+|   |   |   |   |   |--- CholesterolLDL <= 183.58
+|   |   |   |   |   |   |--- AlcoholConsumption <= 9.65
+|   |   |   |   |   |   |   |--- CholesterolTriglycerides <= 52.88
+|   |   |   |   |   |   |   |   |--- EducationLevel <= 2.33
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- EducationLevel >  2.33
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- CholesterolTriglycerides >  52.88
 |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- PhysicalActivity >  3.87
-|   |   |   |   |   |   |   |--- DietQuality <= 3.36
-|   |   |   |   |   |   |   |   |--- CholesterolTriglycerides <= 154.33
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- CholesterolTriglycerides >  154.33
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- DietQuality >  3.36
-|   |   |   |   |   |   |   |   |--- PersonalityChanges <= 0.66
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- PersonalityChanges >  0.66
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |--- EducationLevel >  0.54
-|   |   |   |   |   |--- Forgetfulness <= 0.75
-|   |   |   |   |   |   |--- MemoryComplaints <= 0.69
-|   |   |   |   |   |   |   |--- Age <= 60.17
-|   |   |   |   |   |   |   |   |--- CholesterolHDL <= 83.40
-|   |   |   |   |   |   |   |   |   |--- Hypertension <= 0.22
-|   |   |   |   |   |   |   |   |   |   |--- PersonalityChanges <= 0.78
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- PersonalityChanges >  0.78
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- Hypertension >  0.22
+|   |   |   |   |   |   |--- AlcoholConsumption >  9.65
+|   |   |   |   |   |   |   |--- ADL <= 4.87
+|   |   |   |   |   |   |   |   |--- Age <= 70.65
+|   |   |   |   |   |   |   |   |   |--- DietQuality <= 4.72
 |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- CholesterolHDL >  83.40
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- Age >  60.17
-|   |   |   |   |   |   |   |   |--- EducationLevel <= 1.33
-|   |   |   |   |   |   |   |   |   |--- SystolicBP <= 156.47
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolTriglycerides <= 202.32
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolTriglycerides >  202.32
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |--- SystolicBP >  156.47
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 83.77
+|   |   |   |   |   |   |   |   |   |--- DietQuality >  4.72
+|   |   |   |   |   |   |   |   |   |   |--- Age <= 67.24
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  83.77
+|   |   |   |   |   |   |   |   |   |   |--- Age >  67.24
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- EducationLevel >  1.33
-|   |   |   |   |   |   |   |   |   |--- PersonalityChanges <= 0.22
-|   |   |   |   |   |   |   |   |   |   |--- PatientID <= 5467.09
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- PatientID >  5467.09
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- PersonalityChanges >  0.22
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolTriglycerides <= 211.09
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolTriglycerides >  211.09
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- MemoryComplaints >  0.69
-|   |   |   |   |   |   |   |--- Smoking <= 0.24
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- Smoking >  0.24
-|   |   |   |   |   |   |   |   |--- Diabetes <= 0.92
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- Diabetes >  0.92
+|   |   |   |   |   |   |   |   |--- Age >  70.65
 |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |--- Forgetfulness >  0.75
-|   |   |   |   |   |   |--- MMSE <= 20.74
-|   |   |   |   |   |   |   |--- BMI <= 31.71
-|   |   |   |   |   |   |   |   |--- MMSE <= 6.78
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- MMSE >  6.78
-|   |   |   |   |   |   |   |   |   |--- SystolicBP <= 119.52
-|   |   |   |   |   |   |   |   |   |   |--- Hypertension <= 0.04
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- Hypertension >  0.04
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- SystolicBP >  119.52
-|   |   |   |   |   |   |   |   |   |   |--- Hypertension <= 0.59
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |   |--- Hypertension >  0.59
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |--- BMI >  31.71
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- MMSE >  20.74
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |--- PatientID >  6594.06
-|   |   |   |   |--- SystolicBP <= 95.24
-|   |   |   |   |   |--- class: 1.0
-|   |   |   |   |--- SystolicBP >  95.24
-|   |   |   |   |   |--- DietQuality <= 3.30
-|   |   |   |   |   |   |--- CholesterolTotal <= 228.83
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- CholesterolTotal >  228.83
-|   |   |   |   |   |   |   |--- MemoryComplaints <= 0.18
-|   |   |   |   |   |   |   |   |--- SystolicBP <= 120.49
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- SystolicBP >  120.49
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- MemoryComplaints >  0.18
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |--- DietQuality >  3.30
-|   |   |   |   |   |   |--- BMI <= 19.24
-|   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- BMI >  19.24
-|   |   |   |   |   |   |   |--- CholesterolHDL <= 81.75
-|   |   |   |   |   |   |   |   |--- ADL <= 3.82
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- ADL >  3.82
-|   |   |   |   |   |   |   |   |   |--- DietQuality <= 9.80
-|   |   |   |   |   |   |   |   |   |   |--- Confusion <= 0.54
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- Confusion >  0.54
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- DietQuality >  9.80
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- CholesterolHDL >  81.75
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |--- BehavioralProblems >  0.61
-|   |   |   |--- MMSE <= 19.69
-|   |   |   |   |--- CholesterolHDL <= 34.32
-|   |   |   |   |   |--- AlcoholConsumption <= 5.76
-|   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |--- AlcoholConsumption >  5.76
+|   |   |   |   |   |   |   |--- ADL >  4.87
+|   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- CholesterolLDL >  183.58
 |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |--- CholesterolHDL >  34.32
+|   |   |   |   |--- BehavioralProblems >  0.36
 |   |   |   |   |   |--- class: 1.0
-|   |   |   |--- MMSE >  19.69
-|   |   |   |   |--- MMSE <= 24.44
-|   |   |   |   |   |--- Depression <= 0.01
-|   |   |   |   |   |   |--- Smoking <= 0.34
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- Smoking >  0.34
-|   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |--- Depression >  0.01
-|   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |--- MMSE >  24.44
-|   |   |   |   |   |--- class: 0.0
-|   |--- Age >  63.35
-|   |   |--- ADL <= 7.73
-|   |   |   |--- MemoryComplaints <= 0.69
-|   |   |   |   |--- EducationLevel <= 1.70
-|   |   |   |   |   |--- Confusion <= 0.85
-|   |   |   |   |   |   |--- CholesterolLDL <= 132.75
-|   |   |   |   |   |   |   |--- DiastolicBP <= 106.07
-|   |   |   |   |   |   |   |   |--- Forgetfulness <= 0.51
-|   |   |   |   |   |   |   |   |   |--- Depression <= 0.94
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 51.49
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  51.49
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
-|   |   |   |   |   |   |   |   |   |--- Depression >  0.94
-|   |   |   |   |   |   |   |   |   |   |--- SleepQuality <= 7.88
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |   |--- SleepQuality >  7.88
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |--- Forgetfulness >  0.51
-|   |   |   |   |   |   |   |   |   |--- Smoking <= 0.17
-|   |   |   |   |   |   |   |   |   |   |--- BMI <= 33.62
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- BMI >  33.62
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- Smoking >  0.17
-|   |   |   |   |   |   |   |   |   |   |--- ADL <= 6.22
+|   |   |   |--- AlcoholConsumption >  19.67
+|   |   |   |   |--- class: 1.0
+|   |--- ADL >  7.02
+|   |   |--- class: 0.0
+|--- CholesterolTriglycerides >  58.18
+|   |--- PatientID <= 6564.91
+|   |   |--- MMSE <= 4.37
+|   |   |   |--- DifficultyCompletingTasks <= 0.53
+|   |   |   |   |--- MemoryComplaints <= 0.45
+|   |   |   |   |   |--- DietQuality <= 0.39
+|   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- DietQuality >  0.39
+|   |   |   |   |   |   |--- Diabetes <= 0.43
+|   |   |   |   |   |   |   |--- BehavioralProblems <= 0.00
+|   |   |   |   |   |   |   |   |--- Hypertension <= 0.40
+|   |   |   |   |   |   |   |   |   |--- SleepQuality <= 6.71
+|   |   |   |   |   |   |   |   |   |   |--- ADL <= 1.07
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- ADL >  1.07
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
-|   |   |   |   |   |   |   |   |   |   |--- ADL >  6.22
+|   |   |   |   |   |   |   |   |   |--- SleepQuality >  6.71
+|   |   |   |   |   |   |   |   |   |   |--- SleepQuality <= 9.13
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- SleepQuality >  9.13
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- DiastolicBP >  106.07
-|   |   |   |   |   |   |   |   |--- BehavioralProblems <= 0.78
-|   |   |   |   |   |   |   |   |   |--- SleepQuality <= 4.43
-|   |   |   |   |   |   |   |   |   |   |--- PatientID <= 6101.66
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- PatientID >  6101.66
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- SleepQuality >  4.43
-|   |   |   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers <= 0.21
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers >  0.21
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |--- BehavioralProblems >  0.78
-|   |   |   |   |   |   |   |   |   |--- DietQuality <= 5.36
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- DietQuality >  5.36
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 59.20
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  59.20
+|   |   |   |   |   |   |   |   |--- Hypertension >  0.40
+|   |   |   |   |   |   |   |   |   |--- ADL <= 8.46
+|   |   |   |   |   |   |   |   |   |   |--- MMSE <= 0.74
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- CholesterolLDL >  132.75
-|   |   |   |   |   |   |   |--- MMSE <= 14.49
-|   |   |   |   |   |   |   |   |--- PhysicalActivity <= 0.42
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- PhysicalActivity >  0.42
-|   |   |   |   |   |   |   |   |   |--- SleepQuality <= 9.83
-|   |   |   |   |   |   |   |   |   |   |--- ADL <= 0.87
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- ADL >  0.87
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
-|   |   |   |   |   |   |   |   |   |--- SleepQuality >  9.83
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolTriglycerides <= 292.95
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolTriglycerides >  292.95
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |--- MMSE >  14.49
-|   |   |   |   |   |   |   |   |--- CholesterolHDL <= 66.50
-|   |   |   |   |   |   |   |   |   |--- Hypertension <= 0.52
-|   |   |   |   |   |   |   |   |   |   |--- DifficultyCompletingTasks <= 0.78
+|   |   |   |   |   |   |   |   |   |   |--- MMSE >  0.74
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- DifficultyCompletingTasks >  0.78
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- Hypertension >  0.52
+|   |   |   |   |   |   |   |   |   |--- ADL >  8.46
 |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- CholesterolHDL >  66.50
-|   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 71.87
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  71.87
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolTriglycerides <= 333.67
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolTriglycerides >  333.67
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |--- Confusion >  0.85
-|   |   |   |   |   |   |--- AlcoholConsumption <= 17.42
-|   |   |   |   |   |   |   |--- DietQuality <= 7.99
-|   |   |   |   |   |   |   |   |--- SystolicBP <= 145.88
-|   |   |   |   |   |   |   |   |   |--- DietQuality <= 2.13
-|   |   |   |   |   |   |   |   |   |   |--- Gender <= 0.07
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- Gender >  0.07
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- DietQuality >  2.13
-|   |   |   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 7.27
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |   |--- FunctionalAssessment >  7.27
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- SystolicBP >  145.88
-|   |   |   |   |   |   |   |   |   |--- Age <= 79.16
-|   |   |   |   |   |   |   |   |   |   |--- SystolicBP <= 153.89
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- SystolicBP >  153.89
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- Age >  79.16
-|   |   |   |   |   |   |   |   |   |   |--- PatientID <= 6510.99
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- PatientID >  6510.99
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- DietQuality >  7.99
-|   |   |   |   |   |   |   |   |--- EducationLevel <= 0.65
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- EducationLevel >  0.65
-|   |   |   |   |   |   |   |   |   |--- BMI <= 26.82
-|   |   |   |   |   |   |   |   |   |   |--- MMSE <= 17.92
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- MMSE >  17.92
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- BMI >  26.82
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- AlcoholConsumption >  17.42
-|   |   |   |   |   |   |   |--- ADL <= 1.82
-|   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- ADL >  1.82
-|   |   |   |   |   |   |   |   |--- Age <= 72.95
-|   |   |   |   |   |   |   |   |   |--- ADL <= 5.97
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- ADL >  5.97
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- Age >  72.95
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |--- EducationLevel >  1.70
-|   |   |   |   |   |--- EducationLevel <= 2.96
-|   |   |   |   |   |   |--- FunctionalAssessment <= 3.06
-|   |   |   |   |   |   |   |--- DiastolicBP <= 117.28
-|   |   |   |   |   |   |   |   |--- ADL <= 7.21
-|   |   |   |   |   |   |   |   |   |--- PhysicalActivity <= 5.45
-|   |   |   |   |   |   |   |   |   |   |--- Disorientation <= 0.29
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |   |--- Disorientation >  0.29
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- PhysicalActivity >  5.45
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolTriglycerides <= 164.70
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolTriglycerides >  164.70
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |--- ADL >  7.21
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- DiastolicBP >  117.28
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- FunctionalAssessment >  3.06
-|   |   |   |   |   |   |   |--- Depression <= 0.10
-|   |   |   |   |   |   |   |   |--- Hypertension <= 0.53
-|   |   |   |   |   |   |   |   |   |--- MMSE <= 24.21
-|   |   |   |   |   |   |   |   |   |   |--- BehavioralProblems <= 0.67
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |   |   |   |   |   |   |--- BehavioralProblems >  0.67
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |--- MMSE >  24.21
-|   |   |   |   |   |   |   |   |   |   |--- Gender <= 0.63
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- Gender >  0.63
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- Hypertension >  0.53
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- Depression >  0.10
-|   |   |   |   |   |   |   |   |--- ADL <= 6.26
-|   |   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 2.98
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolLDL <= 158.04
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolLDL >  158.04
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- AlcoholConsumption >  2.98
-|   |   |   |   |   |   |   |   |   |   |--- Disorientation <= 0.76
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- Disorientation >  0.76
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- ADL >  6.26
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |--- EducationLevel >  2.96
-|   |   |   |   |   |   |--- Forgetfulness <= 0.74
-|   |   |   |   |   |   |   |--- BehavioralProblems <= 0.41
-|   |   |   |   |   |   |   |   |--- SleepQuality <= 8.91
-|   |   |   |   |   |   |   |   |   |--- Depression <= 0.44
-|   |   |   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 2.26
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |   |--- FunctionalAssessment >  2.26
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
-|   |   |   |   |   |   |   |   |   |--- Depression >  0.44
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- SleepQuality >  8.91
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- BehavioralProblems >  0.41
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- Forgetfulness >  0.74
-|   |   |   |   |   |   |   |--- MMSE <= 10.63
-|   |   |   |   |   |   |   |   |--- SleepQuality <= 6.77
+|   |   |   |   |   |   |   |--- BehavioralProblems >  0.00
+|   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 4.64
 |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- SleepQuality >  6.77
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- MMSE >  10.63
-|   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 5.62
-|   |   |   |   |   |   |   |   |   |--- BehavioralProblems <= 0.93
-|   |   |   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 2.88
+|   |   |   |   |   |   |   |   |--- FunctionalAssessment >  4.64
+|   |   |   |   |   |   |   |   |   |--- Smoking <= 0.64
+|   |   |   |   |   |   |   |   |   |   |--- CholesterolTotal <= 231.65
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- FunctionalAssessment >  2.88
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- BehavioralProblems >  0.93
+|   |   |   |   |   |   |   |   |   |   |--- CholesterolTotal >  231.65
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- Smoking >  0.64
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- Diabetes >  0.43
+|   |   |   |   |   |   |   |--- Depression <= 0.61
+|   |   |   |   |   |   |   |   |--- Gender <= 0.00
+|   |   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 9.68
+|   |   |   |   |   |   |   |   |   |   |--- CholesterolTotal <= 241.89
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- CholesterolTotal >  241.89
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- AlcoholConsumption >  9.68
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- Gender >  0.00
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |--- Depression >  0.61
+|   |   |   |   |   |   |   |   |--- SystolicBP <= 142.11
+|   |   |   |   |   |   |   |   |   |--- CardiovascularDisease <= 0.10
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- CardiovascularDisease >  0.10
 |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- FunctionalAssessment >  5.62
+|   |   |   |   |   |   |   |   |--- SystolicBP >  142.11
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |--- MemoryComplaints >  0.45
+|   |   |   |   |   |--- Diabetes <= 0.66
+|   |   |   |   |   |   |--- DietQuality <= 5.98
+|   |   |   |   |   |   |   |--- SystolicBP <= 145.56
+|   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 4.88
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- FunctionalAssessment >  4.88
+|   |   |   |   |   |   |   |   |   |--- Hypertension <= 0.61
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- Hypertension >  0.61
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- SystolicBP >  145.56
+|   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- DietQuality >  5.98
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |--- Diabetes >  0.66
+|   |   |   |   |   |   |--- CholesterolTotal <= 176.49
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- CholesterolTotal >  176.49
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |--- DifficultyCompletingTasks >  0.53
+|   |   |   |   |--- EducationLevel <= 2.35
+|   |   |   |   |   |--- MemoryComplaints <= 0.47
+|   |   |   |   |   |   |--- Depression <= 0.46
+|   |   |   |   |   |   |   |--- Disorientation <= 0.32
+|   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 14.40
+|   |   |   |   |   |   |   |   |   |--- PatientID <= 6184.07
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- PatientID >  6184.07
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- AlcoholConsumption >  14.40
+|   |   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 4.28
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- FunctionalAssessment >  4.28
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |--- Disorientation >  0.32
+|   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- Depression >  0.46
+|   |   |   |   |   |   |   |--- EducationLevel <= 1.79
+|   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- EducationLevel >  1.79
+|   |   |   |   |   |   |   |   |--- CardiovascularDisease <= 0.56
 |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |--- MemoryComplaints >  0.69
-|   |   |   |   |--- BehavioralProblems <= 0.53
-|   |   |   |   |   |--- SleepQuality <= 9.43
-|   |   |   |   |   |   |--- MMSE <= 14.04
-|   |   |   |   |   |   |   |--- ADL <= 3.96
-|   |   |   |   |   |   |   |   |--- CholesterolTriglycerides <= 347.42
-|   |   |   |   |   |   |   |   |   |--- Smoking <= 0.38
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolLDL <= 128.40
+|   |   |   |   |   |   |   |   |--- CardiovascularDisease >  0.56
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |--- MemoryComplaints >  0.47
+|   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |--- EducationLevel >  2.35
+|   |   |   |   |   |--- class: 0.0
+|   |   |--- MMSE >  4.37
+|   |   |   |--- FunctionalAssessment <= 2.63
+|   |   |   |   |--- MMSE <= 11.41
+|   |   |   |   |   |--- Age <= 72.27
+|   |   |   |   |   |   |--- BehavioralProblems <= 0.01
+|   |   |   |   |   |   |   |--- Hypertension <= 0.05
+|   |   |   |   |   |   |   |   |--- Smoking <= 0.07
+|   |   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 11.15
+|   |   |   |   |   |   |   |   |   |   |--- SystolicBP <= 116.05
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |   |--- SystolicBP >  116.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- AlcoholConsumption >  11.15
+|   |   |   |   |   |   |   |   |   |   |--- SleepQuality <= 4.67
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- SleepQuality >  4.67
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- Smoking >  0.07
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- Hypertension >  0.05
+|   |   |   |   |   |   |   |   |--- MMSE <= 7.11
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- MMSE >  7.11
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- BehavioralProblems >  0.01
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |--- Age >  72.27
+|   |   |   |   |   |   |--- SystolicBP <= 116.47
+|   |   |   |   |   |   |   |--- CholesterolHDL <= 75.86
+|   |   |   |   |   |   |   |   |--- PhysicalActivity <= 8.22
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- PhysicalActivity >  8.22
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |--- CholesterolHDL >  75.86
+|   |   |   |   |   |   |   |   |--- Forgetfulness <= 0.20
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- Forgetfulness >  0.20
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- SystolicBP >  116.47
+|   |   |   |   |   |   |   |--- Gender <= 0.94
+|   |   |   |   |   |   |   |   |--- Hypertension <= 0.86
+|   |   |   |   |   |   |   |   |   |--- Forgetfulness <= 0.35
+|   |   |   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 9.99
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- AlcoholConsumption >  9.99
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- Forgetfulness >  0.35
+|   |   |   |   |   |   |   |   |   |   |--- ADL <= 8.28
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |   |--- ADL >  8.28
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- Hypertension >  0.86
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- Gender >  0.94
+|   |   |   |   |   |   |   |   |--- Depression <= 0.44
+|   |   |   |   |   |   |   |   |   |--- HeadInjury <= 0.75
+|   |   |   |   |   |   |   |   |   |   |--- Age <= 75.65
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolLDL >  128.40
+|   |   |   |   |   |   |   |   |   |   |--- Age >  75.65
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- HeadInjury >  0.75
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- Depression >  0.44
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |--- MMSE >  11.41
+|   |   |   |   |   |--- FamilyHistoryAlzheimers <= 0.79
+|   |   |   |   |   |   |--- Diabetes <= 0.46
+|   |   |   |   |   |   |   |--- CholesterolTriglycerides <= 189.95
+|   |   |   |   |   |   |   |   |--- ADL <= 7.74
+|   |   |   |   |   |   |   |   |   |--- PersonalityChanges <= 0.67
+|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 75.61
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  75.61
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- PersonalityChanges >  0.67
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- ADL >  7.74
+|   |   |   |   |   |   |   |   |   |--- Disorientation <= 0.26
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- Disorientation >  0.26
+|   |   |   |   |   |   |   |   |   |   |--- Depression <= 0.39
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Depression >  0.39
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |--- CholesterolTriglycerides >  189.95
+|   |   |   |   |   |   |   |   |--- MemoryComplaints <= 0.10
+|   |   |   |   |   |   |   |   |   |--- ADL <= 2.56
+|   |   |   |   |   |   |   |   |   |   |--- PersonalityChanges <= 0.87
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- PersonalityChanges >  0.87
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- ADL >  2.56
+|   |   |   |   |   |   |   |   |   |   |--- ADL <= 5.42
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- ADL >  5.42
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- MemoryComplaints >  0.10
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- Diabetes >  0.46
+|   |   |   |   |   |   |   |--- Confusion <= 0.94
+|   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- Confusion >  0.94
+|   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 13.58
+|   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 35.55
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  35.55
+|   |   |   |   |   |   |   |   |   |   |--- Hypertension <= 0.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Hypertension >  0.05
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- AlcoholConsumption >  13.58
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- FamilyHistoryAlzheimers >  0.79
+|   |   |   |   |   |   |--- MMSE <= 17.96
+|   |   |   |   |   |   |   |--- CholesterolHDL <= 88.19
+|   |   |   |   |   |   |   |   |--- Ethnicity <= 2.00
+|   |   |   |   |   |   |   |   |   |--- CholesterolTotal <= 267.00
+|   |   |   |   |   |   |   |   |   |   |--- Forgetfulness <= 0.25
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- Forgetfulness >  0.25
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- CholesterolTotal >  267.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- Ethnicity >  2.00
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |--- CholesterolHDL >  88.19
+|   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- MMSE >  17.96
+|   |   |   |   |   |   |   |--- CholesterolTotal <= 221.09
+|   |   |   |   |   |   |   |   |--- CholesterolTotal <= 205.74
+|   |   |   |   |   |   |   |   |   |--- MMSE <= 18.97
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- MMSE >  18.97
+|   |   |   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 10.81
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- AlcoholConsumption >  10.81
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- CholesterolTotal >  205.74
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- CholesterolTotal >  221.09
+|   |   |   |   |   |   |   |   |--- EducationLevel <= 0.35
+|   |   |   |   |   |   |   |   |   |--- DiastolicBP <= 111.52
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- DiastolicBP >  111.52
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- EducationLevel >  0.35
+|   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 84.52
+|   |   |   |   |   |   |   |   |   |   |--- BMI <= 35.18
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- BMI >  35.18
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  84.52
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |--- FunctionalAssessment >  2.63
+|   |   |   |   |--- Diabetes <= 0.73
+|   |   |   |   |   |--- DifficultyCompletingTasks <= 0.69
+|   |   |   |   |   |   |--- SystolicBP <= 155.81
+|   |   |   |   |   |   |   |--- EducationLevel <= 2.63
+|   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 4.92
+|   |   |   |   |   |   |   |   |   |--- Ethnicity <= 2.74
+|   |   |   |   |   |   |   |   |   |   |--- Ethnicity <= 0.82
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- Ethnicity >  0.82
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- Ethnicity >  2.74
+|   |   |   |   |   |   |   |   |   |   |--- PhysicalActivity <= 7.85
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- PhysicalActivity >  7.85
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- FunctionalAssessment >  4.92
+|   |   |   |   |   |   |   |   |   |--- CholesterolLDL <= 107.00
+|   |   |   |   |   |   |   |   |   |   |--- MemoryComplaints <= 0.80
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- MemoryComplaints >  0.80
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- CholesterolLDL >  107.00
+|   |   |   |   |   |   |   |   |   |   |--- BehavioralProblems <= 0.07
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- BehavioralProblems >  0.07
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |--- EducationLevel >  2.63
+|   |   |   |   |   |   |   |   |--- CholesterolTriglycerides <= 73.75
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- CholesterolTriglycerides >  73.75
+|   |   |   |   |   |   |   |   |   |--- BehavioralProblems <= 0.56
+|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 28.54
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  28.54
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- BehavioralProblems >  0.56
+|   |   |   |   |   |   |   |   |   |   |--- CholesterolLDL <= 173.25
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- CholesterolLDL >  173.25
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- SystolicBP >  155.81
+|   |   |   |   |   |   |   |--- AlcoholConsumption <= 14.00
+|   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 3.94
+|   |   |   |   |   |   |   |   |   |--- Ethnicity <= 1.24
+|   |   |   |   |   |   |   |   |   |   |--- SystolicBP <= 165.85
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- SystolicBP >  165.85
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- Ethnicity >  1.24
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- FunctionalAssessment >  3.94
+|   |   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 4.17
+|   |   |   |   |   |   |   |   |   |   |--- Gender <= 0.95
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |   |--- Gender >  0.95
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- FunctionalAssessment >  4.17
+|   |   |   |   |   |   |   |   |   |   |--- DietQuality <= 9.74
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- DietQuality >  9.74
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |--- AlcoholConsumption >  14.00
+|   |   |   |   |   |   |   |   |--- Disorientation <= 0.24
+|   |   |   |   |   |   |   |   |   |--- BMI <= 16.57
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- BMI >  16.57
+|   |   |   |   |   |   |   |   |   |   |--- MemoryComplaints <= 0.71
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- MemoryComplaints >  0.71
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- Disorientation >  0.24
+|   |   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 7.67
+|   |   |   |   |   |   |   |   |   |   |--- SleepQuality <= 8.93
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- SleepQuality >  8.93
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- FunctionalAssessment >  7.67
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- DifficultyCompletingTasks >  0.69
+|   |   |   |   |   |   |--- Confusion <= 0.47
+|   |   |   |   |   |   |   |--- FunctionalAssessment <= 3.20
+|   |   |   |   |   |   |   |   |--- CholesterolHDL <= 47.77
+|   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 27.63
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  27.63
+|   |   |   |   |   |   |   |   |   |   |--- PhysicalActivity <= 5.03
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |   |--- PhysicalActivity >  5.03
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- CholesterolHDL >  47.77
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- FunctionalAssessment >  3.20
+|   |   |   |   |   |   |   |   |--- PhysicalActivity <= 3.40
+|   |   |   |   |   |   |   |   |   |--- MemoryComplaints <= 0.59
+|   |   |   |   |   |   |   |   |   |   |--- ADL <= 7.02
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- ADL >  7.02
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- MemoryComplaints >  0.59
+|   |   |   |   |   |   |   |   |   |   |--- SystolicBP <= 139.07
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- SystolicBP >  139.07
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- PhysicalActivity >  3.40
+|   |   |   |   |   |   |   |   |   |--- HeadInjury <= 0.05
+|   |   |   |   |   |   |   |   |   |   |--- DiastolicBP <= 100.09
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- DiastolicBP >  100.09
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- HeadInjury >  0.05
+|   |   |   |   |   |   |   |   |   |   |--- Disorientation <= 0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |   |--- Disorientation >  0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |--- Confusion >  0.47
+|   |   |   |   |   |   |   |--- DiastolicBP <= 74.94
+|   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |--- DiastolicBP >  74.94
+|   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 7.00
+|   |   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 4.58
+|   |   |   |   |   |   |   |   |   |   |--- BehavioralProblems <= 0.69
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- BehavioralProblems >  0.69
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- AlcoholConsumption >  4.58
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- AlcoholConsumption >  7.00
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |--- Diabetes >  0.73
+|   |   |   |   |   |--- Smoking <= 0.68
+|   |   |   |   |   |   |--- Ethnicity <= 1.20
+|   |   |   |   |   |   |   |--- Forgetfulness <= 0.30
+|   |   |   |   |   |   |   |   |--- DifficultyCompletingTasks <= 0.91
+|   |   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 0.59
+|   |   |   |   |   |   |   |   |   |   |--- BMI <= 21.27
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |   |--- BMI >  21.27
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- AlcoholConsumption >  0.59
+|   |   |   |   |   |   |   |   |   |   |--- SleepQuality <= 6.54
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- SleepQuality >  6.54
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |--- DifficultyCompletingTasks >  0.91
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |--- Forgetfulness >  0.30
+|   |   |   |   |   |   |   |   |--- MemoryComplaints <= 0.73
+|   |   |   |   |   |   |   |   |   |--- BehavioralProblems <= 0.25
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- BehavioralProblems >  0.25
+|   |   |   |   |   |   |   |   |   |   |--- CholesterolLDL <= 120.66
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |   |--- CholesterolLDL >  120.66
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- MemoryComplaints >  0.73
+|   |   |   |   |   |   |   |   |   |--- Ethnicity <= 0.40
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- Ethnicity >  0.40
+|   |   |   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers <= 0.49
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers >  0.49
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- Ethnicity >  1.20
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- Smoking >  0.68
+|   |   |   |   |   |   |--- Ethnicity <= 2.09
+|   |   |   |   |   |   |   |--- PatientID <= 5455.62
+|   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |--- PatientID >  5455.62
+|   |   |   |   |   |   |   |   |--- BehavioralProblems <= 0.07
+|   |   |   |   |   |   |   |   |   |--- PatientID <= 5871.28
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- PatientID >  5871.28
+|   |   |   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 7.28
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- FunctionalAssessment >  7.28
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- BehavioralProblems >  0.07
+|   |   |   |   |   |   |   |   |   |--- CholesterolLDL <= 147.63
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- CholesterolLDL >  147.63
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- Ethnicity >  2.09
+|   |   |   |   |   |   |   |--- CholesterolLDL <= 54.41
+|   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- CholesterolLDL >  54.41
+|   |   |   |   |   |   |   |   |--- class: 0.0
+|   |--- PatientID >  6564.91
+|   |   |--- BehavioralProblems <= 0.35
+|   |   |   |--- FunctionalAssessment <= 8.12
+|   |   |   |   |--- ADL <= 4.88
+|   |   |   |   |   |--- CardiovascularDisease <= 0.63
+|   |   |   |   |   |   |--- DiastolicBP <= 78.80
+|   |   |   |   |   |   |   |--- SleepQuality <= 8.28
+|   |   |   |   |   |   |   |   |--- Gender <= 0.33
+|   |   |   |   |   |   |   |   |   |--- CholesterolTotal <= 237.58
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- CholesterolTotal >  237.58
+|   |   |   |   |   |   |   |   |   |   |--- Confusion <= 0.96
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- Confusion >  0.96
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- Gender >  0.33
+|   |   |   |   |   |   |   |   |   |--- Depression <= 0.66
+|   |   |   |   |   |   |   |   |   |   |--- PhysicalActivity <= 8.94
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- PhysicalActivity >  8.94
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- Depression >  0.66
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |--- SleepQuality >  8.28
+|   |   |   |   |   |   |   |   |--- DietQuality <= 2.07
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- DietQuality >  2.07
+|   |   |   |   |   |   |   |   |   |--- Smoking <= 0.13
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- Smoking >  0.13
+|   |   |   |   |   |   |   |   |   |   |--- CholesterolLDL <= 136.04
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |   |--- CholesterolLDL >  136.04
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- DiastolicBP >  78.80
+|   |   |   |   |   |   |   |--- MMSE <= 2.88
+|   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- MMSE >  2.88
+|   |   |   |   |   |   |   |   |--- CholesterolTotal <= 247.30
+|   |   |   |   |   |   |   |   |   |--- SleepQuality <= 4.38
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- SleepQuality >  4.38
+|   |   |   |   |   |   |   |   |   |   |--- ADL <= 4.29
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- ADL >  4.29
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- CholesterolTotal >  247.30
+|   |   |   |   |   |   |   |   |   |--- SleepQuality <= 5.96
+|   |   |   |   |   |   |   |   |   |   |--- SystolicBP <= 115.57
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |   |--- SystolicBP >  115.57
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- SleepQuality >  5.96
+|   |   |   |   |   |   |   |   |   |   |--- DifficultyCompletingTasks <= 0.88
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- DifficultyCompletingTasks >  0.88
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- CardiovascularDisease >  0.63
+|   |   |   |   |   |   |--- CholesterolHDL <= 60.08
+|   |   |   |   |   |   |   |--- FunctionalAssessment <= 5.55
+|   |   |   |   |   |   |   |   |--- Age <= 70.95
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- Age >  70.95
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |--- FunctionalAssessment >  5.55
+|   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- CholesterolHDL >  60.08
+|   |   |   |   |   |   |   |--- AlcoholConsumption <= 9.64
+|   |   |   |   |   |   |   |   |--- Age <= 74.16
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- Age >  74.16
+|   |   |   |   |   |   |   |   |   |--- DietQuality <= 0.89
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- DietQuality >  0.89
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- AlcoholConsumption >  9.64
+|   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |--- ADL >  4.88
+|   |   |   |   |   |--- Gender <= 0.72
+|   |   |   |   |   |   |--- SleepQuality <= 7.82
+|   |   |   |   |   |   |   |--- Smoking <= 0.48
+|   |   |   |   |   |   |   |   |--- DiastolicBP <= 79.30
+|   |   |   |   |   |   |   |   |   |--- Depression <= 0.37
+|   |   |   |   |   |   |   |   |   |   |--- PhysicalActivity <= 2.96
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- PhysicalActivity >  2.96
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- Depression >  0.37
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- DiastolicBP >  79.30
+|   |   |   |   |   |   |   |   |   |--- MMSE <= 7.72
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- MMSE >  7.72
+|   |   |   |   |   |   |   |   |   |   |--- Age <= 78.27
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Age >  78.27
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- Smoking >  0.48
+|   |   |   |   |   |   |   |   |--- PatientID <= 6699.17
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- PatientID >  6699.17
+|   |   |   |   |   |   |   |   |   |--- Hypertension <= 0.16
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- Hypertension >  0.16
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- SleepQuality >  7.82
+|   |   |   |   |   |   |   |--- DifficultyCompletingTasks <= 0.90
+|   |   |   |   |   |   |   |   |--- MemoryComplaints <= 0.18
+|   |   |   |   |   |   |   |   |   |--- Forgetfulness <= 0.92
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- Forgetfulness >  0.92
+|   |   |   |   |   |   |   |   |   |   |--- Age <= 76.71
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |   |--- Age >  76.71
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- MemoryComplaints >  0.18
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- DifficultyCompletingTasks >  0.90
+|   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |--- Gender >  0.72
+|   |   |   |   |   |   |--- CardiovascularDisease <= 0.95
+|   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers <= 0.70
+|   |   |   |   |   |   |   |   |--- EducationLevel <= 1.78
+|   |   |   |   |   |   |   |   |   |--- Depression <= 0.42
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- Depression >  0.42
+|   |   |   |   |   |   |   |   |   |   |--- PatientID <= 6759.57
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |   |--- PatientID >  6759.57
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- EducationLevel >  1.78
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers >  0.70
+|   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- CardiovascularDisease >  0.95
+|   |   |   |   |   |   |   |--- EducationLevel <= 0.80
+|   |   |   |   |   |   |   |   |--- PatientID <= 6724.25
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- PatientID >  6724.25
+|   |   |   |   |   |   |   |   |   |--- DiastolicBP <= 85.36
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- DiastolicBP >  85.36
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |--- EducationLevel >  0.80
+|   |   |   |   |   |   |   |   |--- SleepQuality <= 5.97
+|   |   |   |   |   |   |   |   |   |--- CholesterolLDL <= 154.30
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- CholesterolLDL >  154.30
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- SleepQuality >  5.97
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |--- FunctionalAssessment >  8.12
+|   |   |   |   |--- AlcoholConsumption <= 5.74
+|   |   |   |   |   |--- CholesterolTriglycerides <= 342.72
+|   |   |   |   |   |   |--- HeadInjury <= 0.19
+|   |   |   |   |   |   |   |--- SleepQuality <= 8.20
+|   |   |   |   |   |   |   |   |--- MemoryComplaints <= 0.35
+|   |   |   |   |   |   |   |   |   |--- CholesterolTotal <= 247.73
+|   |   |   |   |   |   |   |   |   |   |--- Depression <= 0.26
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |   |--- Depression >  0.26
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- CholesterolTotal >  247.73
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- MemoryComplaints >  0.35
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- SleepQuality >  8.20
+|   |   |   |   |   |   |   |   |--- ADL <= 6.74
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- ADL >  6.74
+|   |   |   |   |   |   |   |   |   |--- BMI <= 17.07
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |   |--- BMI >  17.07
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- HeadInjury >  0.19
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- CholesterolTriglycerides >  342.72
+|   |   |   |   |   |   |--- DifficultyCompletingTasks <= 0.53
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- DifficultyCompletingTasks >  0.53
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |--- AlcoholConsumption >  5.74
+|   |   |   |   |   |--- CholesterolLDL <= 88.69
+|   |   |   |   |   |   |--- Age <= 72.40
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- Age >  72.40
+|   |   |   |   |   |   |   |--- CholesterolHDL <= 87.61
+|   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- CholesterolHDL >  87.61
+|   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- CholesterolLDL >  88.69
+|   |   |   |   |   |   |--- Gender <= 0.09
+|   |   |   |   |   |   |   |--- Forgetfulness <= 0.98
+|   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |--- Forgetfulness >  0.98
+|   |   |   |   |   |   |   |   |--- CardiovascularDisease <= 0.03
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- CardiovascularDisease >  0.03
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- Gender >  0.09
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |--- BehavioralProblems >  0.35
+|   |   |   |--- Forgetfulness <= 0.84
+|   |   |   |   |--- ADL <= 8.46
+|   |   |   |   |   |--- SystolicBP <= 153.47
+|   |   |   |   |   |   |--- CardiovascularDisease <= 0.98
+|   |   |   |   |   |   |   |--- CholesterolTotal <= 207.72
+|   |   |   |   |   |   |   |   |--- Gender <= 0.78
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- Gender >  0.78
+|   |   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 8.24
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |   |--- FunctionalAssessment >  8.24
+|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |--- CholesterolTotal >  207.72
+|   |   |   |   |   |   |   |   |--- Hypertension <= 0.61
+|   |   |   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |   |   |--- Hypertension >  0.61
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- CardiovascularDisease >  0.98
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |--- SystolicBP >  153.47
+|   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |--- ADL >  8.46
+|   |   |   |   |   |--- class: 1.0
+|   |   |   |--- Forgetfulness >  0.84
+|   |   |   |   |--- PatientID <= 6838.94
+|   |   |   |   |   |--- Gender <= 0.36
+|   |   |   |   |   |   |--- MMSE <= 6.11
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- MMSE >  6.11
+|   |   |   |   |   |   |   |--- PersonalityChanges <= 0.38
+|   |   |   |   |   |   |   |   |--- BMI <= 15.95
+|   |   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |   |   |--- BMI >  15.95
+|   |   |   |   |   |   |   |   |   |--- Smoking <= 0.38
+|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
 |   |   |   |   |   |   |   |   |   |--- Smoking >  0.38
 |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- CholesterolTriglycerides >  347.42
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- ADL >  3.96
-|   |   |   |   |   |   |   |   |--- Confusion <= 0.76
-|   |   |   |   |   |   |   |   |   |--- Depression <= 0.93
-|   |   |   |   |   |   |   |   |   |   |--- BMI <= 23.41
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |   |--- BMI >  23.41
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- Depression >  0.93
-|   |   |   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers <= 0.75
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers >  0.75
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- Confusion >  0.76
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- MMSE >  14.04
-|   |   |   |   |   |   |   |--- Disorientation <= 0.45
-|   |   |   |   |   |   |   |   |--- MMSE <= 23.73
-|   |   |   |   |   |   |   |   |   |--- Confusion <= 0.99
-|   |   |   |   |   |   |   |   |   |   |--- SystolicBP <= 92.09
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- SystolicBP >  92.09
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |   |   |   |   |   |--- Confusion >  0.99
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- MMSE >  23.73
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- Disorientation >  0.45
-|   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 19.77
-|   |   |   |   |   |   |   |   |   |--- SleepQuality <= 8.20
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- SleepQuality >  8.20
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- AlcoholConsumption >  19.77
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |--- SleepQuality >  9.43
-|   |   |   |   |   |   |--- ADL <= 5.61
-|   |   |   |   |   |   |   |--- DiastolicBP <= 90.18
-|   |   |   |   |   |   |   |   |--- CholesterolTriglycerides <= 141.51
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- CholesterolTriglycerides >  141.51
-|   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 32.30
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  32.30
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- DiastolicBP >  90.18
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- ADL >  5.61
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |--- BehavioralProblems >  0.53
-|   |   |   |   |   |--- Age <= 78.83
-|   |   |   |   |   |   |--- PatientID <= 6192.48
-|   |   |   |   |   |   |   |--- PatientID <= 5624.43
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- PatientID >  5624.43
+|   |   |   |   |   |   |   |--- PersonalityChanges >  0.38
 |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- PatientID >  6192.48
+|   |   |   |   |   |--- Gender >  0.36
+|   |   |   |   |   |   |--- DiastolicBP <= 68.75
 |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |--- Age >  78.83
-|   |   |   |   |   |   |--- FamilyHistoryAlzheimers <= 0.44
+|   |   |   |   |   |   |--- DiastolicBP >  68.75
 |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- FamilyHistoryAlzheimers >  0.44
-|   |   |   |   |   |   |   |--- FunctionalAssessment <= 8.04
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- FunctionalAssessment >  8.04
-|   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |--- ADL >  7.73
-|   |   |   |--- PatientID <= 6108.88
-|   |   |   |   |--- BMI <= 15.49
-|   |   |   |   |   |--- CholesterolLDL <= 118.26
-|   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |--- CholesterolLDL >  118.26
-|   |   |   |   |   |   |--- DiastolicBP <= 109.73
-|   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- DiastolicBP >  109.73
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |--- BMI >  15.49
-|   |   |   |   |   |--- FunctionalAssessment <= 1.99
-|   |   |   |   |   |   |--- AlcoholConsumption <= 9.95
-|   |   |   |   |   |   |   |--- DietQuality <= 2.38
-|   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- DietQuality >  2.38
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- AlcoholConsumption >  9.95
-|   |   |   |   |   |   |   |--- ADL <= 8.16
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- ADL >  8.16
-|   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |--- FunctionalAssessment >  1.99
-|   |   |   |   |   |   |--- Confusion <= 0.20
-|   |   |   |   |   |   |   |--- CholesterolTriglycerides <= 94.42
-|   |   |   |   |   |   |   |   |--- Hypertension <= 0.44
-|   |   |   |   |   |   |   |   |   |--- MemoryComplaints <= 0.16
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- MemoryComplaints >  0.16
-|   |   |   |   |   |   |   |   |   |   |--- MMSE <= 11.04
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- MMSE >  11.04
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- Hypertension >  0.44
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- CholesterolTriglycerides >  94.42
-|   |   |   |   |   |   |   |   |--- Forgetfulness <= 0.67
-|   |   |   |   |   |   |   |   |   |--- MemoryComplaints <= 0.76
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- MemoryComplaints >  0.76
-|   |   |   |   |   |   |   |   |   |   |--- BMI <= 30.45
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |   |--- BMI >  30.45
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |--- Forgetfulness >  0.67
-|   |   |   |   |   |   |   |   |   |--- CholesterolLDL <= 79.00
-|   |   |   |   |   |   |   |   |   |   |--- BehavioralProblems <= 0.75
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- BehavioralProblems >  0.75
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- CholesterolLDL >  79.00
-|   |   |   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 4.77
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |   |--- FunctionalAssessment >  4.77
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- Confusion >  0.20
-|   |   |   |   |   |   |   |--- Forgetfulness <= 0.77
-|   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 5.47
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- AlcoholConsumption >  5.47
-|   |   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 16.90
-|   |   |   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 7.96
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- AlcoholConsumption >  7.96
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- AlcoholConsumption >  16.90
-|   |   |   |   |   |   |   |   |   |   |--- BMI <= 15.87
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- BMI >  15.87
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- Forgetfulness >  0.77
-|   |   |   |   |   |   |   |   |--- Age <= 72.05
-|   |   |   |   |   |   |   |   |   |--- EducationLevel <= 1.96
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- EducationLevel >  1.96
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- Age >  72.05
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |--- PatientID >  6108.88
-|   |   |   |   |--- BehavioralProblems <= 0.70
-|   |   |   |   |   |--- Gender <= 0.58
-|   |   |   |   |   |   |--- ADL <= 8.31
-|   |   |   |   |   |   |   |--- DiastolicBP <= 92.73
-|   |   |   |   |   |   |   |   |--- CholesterolLDL <= 132.53
-|   |   |   |   |   |   |   |   |   |--- Depression <= 0.39
-|   |   |   |   |   |   |   |   |   |   |--- MMSE <= 14.95
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- MMSE >  14.95
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- Depression >  0.39
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- CholesterolLDL >  132.53
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- DiastolicBP >  92.73
-|   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers <= 0.39
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers >  0.39
-|   |   |   |   |   |   |   |   |   |--- DifficultyCompletingTasks <= 0.12
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- DifficultyCompletingTasks >  0.12
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- ADL >  8.31
-|   |   |   |   |   |   |   |--- CholesterolTotal <= 264.98
-|   |   |   |   |   |   |   |   |--- Confusion <= 0.33
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- Confusion >  0.33
-|   |   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers <= 0.52
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers >  0.52
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- CholesterolTotal >  264.98
-|   |   |   |   |   |   |   |   |--- Disorientation <= 0.70
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- Disorientation >  0.70
-|   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 39.78
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  39.78
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |--- Gender >  0.58
-|   |   |   |   |   |   |--- FamilyHistoryAlzheimers <= 0.67
-|   |   |   |   |   |   |   |--- MemoryComplaints <= 0.18
-|   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- MemoryComplaints >  0.18
-|   |   |   |   |   |   |   |   |--- Diabetes <= 0.20
-|   |   |   |   |   |   |   |   |   |--- CholesterolLDL <= 168.08
-|   |   |   |   |   |   |   |   |   |   |--- CardiovascularDisease <= 0.31
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |   |--- CardiovascularDisease >  0.31
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- CholesterolLDL >  168.08
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- Diabetes >  0.20
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- FamilyHistoryAlzheimers >  0.67
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |--- BehavioralProblems >  0.70
-|   |   |   |   |   |--- DietQuality <= 5.95
-|   |   |   |   |   |   |--- DiastolicBP <= 71.27
-|   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- DiastolicBP >  71.27
-|   |   |   |   |   |   |   |--- Age <= 78.21
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- Age >  78.21
-|   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |--- DietQuality >  5.95
-|   |   |   |   |   |   |--- SystolicBP <= 161.28
-|   |   |   |   |   |   |   |--- MMSE <= 25.37
-|   |   |   |   |   |   |   |   |--- DifficultyCompletingTasks <= 0.66
-|   |   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 3.06
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- FunctionalAssessment >  3.06
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- DifficultyCompletingTasks >  0.66
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- MMSE >  25.37
-|   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- SystolicBP >  161.28
-|   |   |   |   |   |   |   |--- class: 0.0
-|--- Ethnicity >  0.61
-|   |--- CardiovascularDisease <= 0.12
-|   |   |--- MemoryComplaints <= 0.25
-|   |   |   |--- Disorientation <= 0.46
-|   |   |   |   |--- MMSE <= 26.90
-|   |   |   |   |   |--- DifficultyCompletingTasks <= 0.84
-|   |   |   |   |   |   |--- MMSE <= 7.75
-|   |   |   |   |   |   |   |--- DietQuality <= 2.81
-|   |   |   |   |   |   |   |   |--- BehavioralProblems <= 0.54
-|   |   |   |   |   |   |   |   |   |--- Forgetfulness <= 0.17
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 64.03
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  64.03
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |--- Forgetfulness >  0.17
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- BehavioralProblems >  0.54
-|   |   |   |   |   |   |   |   |   |--- Ethnicity <= 2.48
-|   |   |   |   |   |   |   |   |   |   |--- MMSE <= 4.49
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- MMSE >  4.49
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- Ethnicity >  2.48
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- DietQuality >  2.81
-|   |   |   |   |   |   |   |   |--- Age <= 61.85
-|   |   |   |   |   |   |   |   |   |--- EducationLevel <= 0.01
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- EducationLevel >  0.01
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- Age >  61.85
-|   |   |   |   |   |   |   |   |   |--- PhysicalActivity <= 9.06
-|   |   |   |   |   |   |   |   |   |   |--- Depression <= 0.58
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
-|   |   |   |   |   |   |   |   |   |   |--- Depression >  0.58
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |--- PhysicalActivity >  9.06
-|   |   |   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 4.06
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- FunctionalAssessment >  4.06
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- MMSE >  7.75
-|   |   |   |   |   |   |   |--- BehavioralProblems <= 0.29
-|   |   |   |   |   |   |   |   |--- PersonalityChanges <= 0.54
-|   |   |   |   |   |   |   |   |   |--- FunctionalAssessment <= 2.18
-|   |   |   |   |   |   |   |   |   |   |--- BMI <= 36.65
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |   |   |   |   |   |   |--- BMI >  36.65
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- FunctionalAssessment >  2.18
-|   |   |   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers <= 0.90
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
-|   |   |   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers >  0.90
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- PersonalityChanges >  0.54
-|   |   |   |   |   |   |   |   |   |--- Smoking <= 0.40
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- Smoking >  0.40
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 88.40
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  88.40
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |--- BehavioralProblems >  0.29
-|   |   |   |   |   |   |   |   |--- MMSE <= 16.20
-|   |   |   |   |   |   |   |   |   |--- Confusion <= 0.67
-|   |   |   |   |   |   |   |   |   |   |--- AlcoholConsumption <= 15.61
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- AlcoholConsumption >  15.61
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- Confusion >  0.67
-|   |   |   |   |   |   |   |   |   |   |--- DiastolicBP <= 97.17
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- DiastolicBP >  97.17
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- MMSE >  16.20
-|   |   |   |   |   |   |   |   |   |--- EducationLevel <= 2.83
-|   |   |   |   |   |   |   |   |   |   |--- PatientID <= 6553.34
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- PatientID >  6553.34
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- EducationLevel >  2.83
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |--- DifficultyCompletingTasks >  0.84
-|   |   |   |   |   |   |--- Confusion <= 0.46
-|   |   |   |   |   |   |   |--- PatientID <= 6087.51
-|   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers <= 0.04
-|   |   |   |   |   |   |   |   |   |--- PatientID <= 5152.93
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolLDL <= 67.91
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolLDL >  67.91
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |--- PatientID >  5152.93
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolLDL <= 70.54
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolLDL >  70.54
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers >  0.04
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- PatientID >  6087.51
-|   |   |   |   |   |   |   |   |--- Hypertension <= 0.38
-|   |   |   |   |   |   |   |   |   |--- PatientID <= 6241.29
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- PatientID >  6241.29
-|   |   |   |   |   |   |   |   |   |   |--- Ethnicity <= 1.47
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |   |--- Ethnicity >  1.47
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |--- Hypertension >  0.38
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- Confusion >  0.46
-|   |   |   |   |   |   |   |--- Age <= 60.70
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- Age >  60.70
-|   |   |   |   |   |   |   |   |--- SystolicBP <= 128.50
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- SystolicBP >  128.50
-|   |   |   |   |   |   |   |   |   |--- Smoking <= 0.96
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- Smoking >  0.96
-|   |   |   |   |   |   |   |   |   |   |--- DietQuality <= 7.82
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |   |--- DietQuality >  7.82
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |--- MMSE >  26.90
-|   |   |   |   |   |--- BMI <= 35.43
-|   |   |   |   |   |   |--- EducationLevel <= 1.84
-|   |   |   |   |   |   |   |--- Hypertension <= 0.07
-|   |   |   |   |   |   |   |   |--- PhysicalActivity <= 2.50
-|   |   |   |   |   |   |   |   |   |--- PhysicalActivity <= 2.05
-|   |   |   |   |   |   |   |   |   |   |--- EducationLevel <= 0.66
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- EducationLevel >  0.66
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- PhysicalActivity >  2.05
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- PhysicalActivity >  2.50
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- Hypertension >  0.07
-|   |   |   |   |   |   |   |   |--- SystolicBP <= 132.87
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- SystolicBP >  132.87
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- EducationLevel >  1.84
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |--- BMI >  35.43
-|   |   |   |   |   |   |--- class: 0.0
-|   |   |   |--- Disorientation >  0.46
-|   |   |   |   |--- CholesterolLDL <= 178.19
-|   |   |   |   |   |--- FunctionalAssessment <= 5.71
-|   |   |   |   |   |   |--- SystolicBP <= 167.43
-|   |   |   |   |   |   |   |--- Hypertension <= 0.33
-|   |   |   |   |   |   |   |   |--- SystolicBP <= 140.85
-|   |   |   |   |   |   |   |   |   |--- SystolicBP <= 111.53
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- SystolicBP >  111.53
-|   |   |   |   |   |   |   |   |   |   |--- BMI <= 29.69
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- BMI >  29.69
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- SystolicBP >  140.85
-|   |   |   |   |   |   |   |   |   |--- ADL <= 6.25
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 72.05
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  72.05
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- ADL >  6.25
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- Hypertension >  0.33
-|   |   |   |   |   |   |   |   |--- CholesterolTotal <= 246.03
-|   |   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers <= 0.67
-|   |   |   |   |   |   |   |   |   |   |--- DiastolicBP <= 99.87
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- DiastolicBP >  99.87
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers >  0.67
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- CholesterolTotal >  246.03
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- SystolicBP >  167.43
-|   |   |   |   |   |   |   |--- SystolicBP <= 172.07
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- SystolicBP >  172.07
-|   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |--- FunctionalAssessment >  5.71
-|   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |--- CholesterolLDL >  178.19
-|   |   |   |   |   |--- class: 0.0
-|   |   |--- MemoryComplaints >  0.25
-|   |   |   |--- ADL <= 7.77
-|   |   |   |   |--- DiastolicBP <= 68.51
-|   |   |   |   |   |--- SystolicBP <= 113.09
-|   |   |   |   |   |   |--- FunctionalAssessment <= 0.75
-|   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- FunctionalAssessment >  0.75
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |--- SystolicBP >  113.09
-|   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |--- DiastolicBP >  68.51
-|   |   |   |   |   |--- Age <= 87.13
-|   |   |   |   |   |   |--- PersonalityChanges <= 0.55
-|   |   |   |   |   |   |   |--- ADL <= 3.84
-|   |   |   |   |   |   |   |   |--- HeadInjury <= 0.84
-|   |   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers <= 0.73
-|   |   |   |   |   |   |   |   |   |   |--- Ethnicity <= 2.30
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- Ethnicity >  2.30
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers >  0.73
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- HeadInjury >  0.84
-|   |   |   |   |   |   |   |   |   |--- CholesterolTriglycerides <= 304.52
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 41.59
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  41.59
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- CholesterolTriglycerides >  304.52
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- ADL >  3.84
-|   |   |   |   |   |   |   |   |--- PhysicalActivity <= 6.87
-|   |   |   |   |   |   |   |   |   |--- BehavioralProblems <= 0.71
-|   |   |   |   |   |   |   |   |   |   |--- ADL <= 4.65
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- ADL >  4.65
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |--- BehavioralProblems >  0.71
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- PhysicalActivity >  6.87
-|   |   |   |   |   |   |   |   |   |--- DiastolicBP <= 94.04
-|   |   |   |   |   |   |   |   |   |   |--- BMI <= 32.29
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- BMI >  32.29
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- DiastolicBP >  94.04
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- PersonalityChanges >  0.55
-|   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |--- Age >  87.13
-|   |   |   |   |   |   |--- MMSE <= 15.06
-|   |   |   |   |   |   |   |--- Age <= 88.77
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- Age >  88.77
-|   |   |   |   |   |   |   |   |--- SleepQuality <= 5.47
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- SleepQuality >  5.47
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- MMSE >  15.06
-|   |   |   |   |   |   |   |--- ADL <= 4.12
-|   |   |   |   |   |   |   |   |--- DietQuality <= 6.48
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- DietQuality >  6.48
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- ADL >  4.12
-|   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |--- ADL >  7.77
-|   |   |   |   |--- FunctionalAssessment <= 5.00
-|   |   |   |   |   |--- class: 1.0
-|   |   |   |   |--- FunctionalAssessment >  5.00
-|   |   |   |   |   |--- ADL <= 9.31
-|   |   |   |   |   |   |--- CholesterolLDL <= 111.67
-|   |   |   |   |   |   |   |--- CholesterolTotal <= 172.65
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- CholesterolTotal >  172.65
-|   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- CholesterolLDL >  111.67
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |--- ADL >  9.31
-|   |   |   |   |   |   |--- DietQuality <= 8.41
-|   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- DietQuality >  8.41
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |--- CardiovascularDisease >  0.12
-|   |   |--- CholesterolLDL <= 146.18
-|   |   |   |--- MemoryComplaints <= 0.55
-|   |   |   |   |--- BehavioralProblems <= 0.21
-|   |   |   |   |   |--- MMSE <= 22.75
-|   |   |   |   |   |   |--- CholesterolTriglycerides <= 168.29
-|   |   |   |   |   |   |   |--- CholesterolTotal <= 182.86
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- CholesterolTotal >  182.86
-|   |   |   |   |   |   |   |   |--- Gender <= 0.19
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- Gender >  0.19
-|   |   |   |   |   |   |   |   |   |--- ADL <= 3.41
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |--- ADL >  3.41
-|   |   |   |   |   |   |   |   |   |   |--- HeadInjury <= 0.72
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- HeadInjury >  0.72
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- CholesterolTriglycerides >  168.29
-|   |   |   |   |   |   |   |--- SleepQuality <= 9.10
-|   |   |   |   |   |   |   |   |--- SleepQuality <= 5.52
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- SleepQuality >  5.52
-|   |   |   |   |   |   |   |   |   |--- BMI <= 30.76
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- BMI >  30.76
-|   |   |   |   |   |   |   |   |   |   |--- DietQuality <= 6.22
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |   |   |--- DietQuality >  6.22
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |--- SleepQuality >  9.10
-|   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |--- MMSE >  22.75
-|   |   |   |   |   |   |--- CholesterolTriglycerides <= 252.71
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- CholesterolTriglycerides >  252.71
-|   |   |   |   |   |   |   |--- MMSE <= 25.85
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- MMSE >  25.85
-|   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |--- BehavioralProblems >  0.21
-|   |   |   |   |   |--- class: 1.0
-|   |   |   |--- MemoryComplaints >  0.55
-|   |   |   |   |--- DietQuality <= 0.58
-|   |   |   |   |   |--- class: 1.0
-|   |   |   |   |--- DietQuality >  0.58
-|   |   |   |   |   |--- FunctionalAssessment <= 6.37
-|   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |--- FunctionalAssessment >  6.37
-|   |   |   |   |   |   |--- Confusion <= 0.82
-|   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers <= 0.68
-|   |   |   |   |   |   |   |   |--- PhysicalActivity <= 8.74
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- PhysicalActivity >  8.74
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- FamilyHistoryAlzheimers >  0.68
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- Confusion >  0.82
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |   |--- CholesterolLDL >  146.18
-|   |   |   |--- Confusion <= 0.36
-|   |   |   |   |--- ADL <= 5.36
-|   |   |   |   |   |--- DiastolicBP <= 114.90
-|   |   |   |   |   |   |--- FunctionalAssessment <= 5.36
-|   |   |   |   |   |   |   |--- CholesterolLDL <= 160.26
-|   |   |   |   |   |   |   |   |--- CholesterolTotal <= 278.60
-|   |   |   |   |   |   |   |   |   |--- CholesterolHDL <= 83.33
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- CholesterolHDL >  83.33
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |   |--- CholesterolTotal >  278.60
-|   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- CholesterolLDL >  160.26
-|   |   |   |   |   |   |   |   |--- SleepQuality <= 7.64
-|   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |--- SleepQuality >  7.64
-|   |   |   |   |   |   |   |   |   |--- CholesterolLDL <= 194.23
-|   |   |   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |   |   |   |--- CholesterolLDL >  194.23
-|   |   |   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |--- FunctionalAssessment >  5.36
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |--- DiastolicBP >  114.90
-|   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |--- ADL >  5.36
-|   |   |   |   |   |--- BMI <= 16.82
-|   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |--- BMI >  16.82
-|   |   |   |   |   |   |--- BehavioralProblems <= 0.20
-|   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |   |   |--- BehavioralProblems >  0.20
-|   |   |   |   |   |   |   |--- Smoking <= 0.92
-|   |   |   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |   |   |--- Smoking >  0.92
-|   |   |   |   |   |   |   |   |--- class: 0.0
-|   |   |   |--- Confusion >  0.36
-|   |   |   |   |--- MMSE <= 25.28
-|   |   |   |   |   |--- SleepQuality <= 8.60
-|   |   |   |   |   |   |--- class: 1.0
-|   |   |   |   |   |--- SleepQuality >  8.60
-|   |   |   |   |   |   |--- class: 0.0
-|   |   |   |   |--- MMSE >  25.28
+|   |   |   |   |--- PatientID >  6838.94
 |   |   |   |   |   |--- class: 0.0
