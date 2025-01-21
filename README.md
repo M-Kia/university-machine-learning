@@ -1,17 +1,15 @@
 ```python
 import os
 import re
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 from sklearn.model_selection import train_test_split
 
-
 def split_camel_case(text):
     return re.sub(r'(?<!^)(?=[A-Z])', ' ', text)
-
-
 ```
 
 
@@ -966,5 +964,121 @@ for column in categorical_columns:
 
     
 ![png](main_files/main_6_16.png)
+    
+
+
+
+```python
+for column in numerical_columns:
+    plt.figure(figsize=(8, 5))
+    sns.histplot(data=data, x=column, kde=True, bins=20)
+    plt.title(f'Distribution of {column}')
+    plt.show()
+```
+
+
+    
+![png](main_files/main_7_0.png)
+    
+
+
+
+    
+![png](main_files/main_7_1.png)
+    
+
+
+
+    
+![png](main_files/main_7_2.png)
+    
+
+
+
+    
+![png](main_files/main_7_3.png)
+    
+
+
+
+    
+![png](main_files/main_7_4.png)
+    
+
+
+
+    
+![png](main_files/main_7_5.png)
+    
+
+
+
+    
+![png](main_files/main_7_6.png)
+    
+
+
+
+    
+![png](main_files/main_7_7.png)
+    
+
+
+
+    
+![png](main_files/main_7_8.png)
+    
+
+
+
+    
+![png](main_files/main_7_9.png)
+    
+
+
+
+    
+![png](main_files/main_7_10.png)
+    
+
+
+
+    
+![png](main_files/main_7_11.png)
+    
+
+
+
+    
+![png](main_files/main_7_12.png)
+    
+
+
+
+    
+![png](main_files/main_7_13.png)
+    
+
+
+
+    
+![png](main_files/main_7_14.png)
+    
+
+
+
+```python
+mask = np.triu(np.ones_like(data.corr(), dtype=bool))
+
+# Plot heatmap of the correlation matrix
+plt.figure(figsize=(12, 10))
+sns.heatmap(data.corr(),cmap="coolwarm", cbar_kws={"shrink": .5}, mask=mask)
+
+plt.show()
+```
+
+
+    
+![png](main_files/main_8_0.png)
     
 
