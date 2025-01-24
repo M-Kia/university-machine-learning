@@ -126,6 +126,8 @@ def convert_to_serializable(obj):
 
 ```python
 def plot_confusion_matrix(y_true, y_pred, model_name):
+        # Visualize confusion matrix and decision boundaries
+        labels = ["Benign", "Malignant"]
         cm = confusion_matrix(y_true, y_pred)
         plt.figure(figsize=(8, 6))
         sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=labels, yticklabels=labels)
@@ -161,8 +163,6 @@ results_df = pd.DataFrame({
 })
 results_df.to_excel("comparison_results.xlsx", index=False)
 
-# Visualize confusion matrix and decision boundaries
-labels = ["Benign", "Malignant"]
 ```
 
 
